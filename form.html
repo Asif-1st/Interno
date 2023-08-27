@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="CSS/form.css">
+
+    <!-- font awesome icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="container">
+        <header>
+            <h1>Complex Form Design</h1>
+        </header>
+        <section class="form">
+            <div class="inline-form">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" value="Asif">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">First Name</label>
+                    <input type="text" id="lastName" name="lastName" value="Ahammad">
+                </div>
+            </div>
+            <div class="inline-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="Asif1st@gamil.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Number</label>
+                    <input type="text" id="phone" name="phone" value="01XXX_XXXXX">
+                </div>  
+            </div>
+            <div class="inline-form">
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="">Bangladesh</option>
+                        <option value="">India</option>
+                        <option value="">Canada</option>
+                        <option value="">Usa</option>
+                        <option value="">China</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="City">City</label>
+                    <select name="City" id="City">
+                        <option value="">Dhaka</option>
+                        <option value="">Rajshahi</option>
+                        <option value="">Rangpur</option>
+                        <option value="">Cumilla</option>
+                        <option value="">Joypurhat</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="inline-form" id="Gender">
+                <label for="Gender" id="gender">Gender</label>
+                <div class="form-bot">
+                    <div class="form-sm">
+                        <input type="radio" name="gender" id="male">
+                        <span>Male</span>
+                    </div>
+                    <div class="form-sm">
+                        <input type="radio" name="gender" id="Female">
+                        <span>Female</span>
+                    </div>
+                    <div class="form-sm">
+                        <input type="radio" name="gender" id="other">
+                        <span>Other</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-bio">
+                <label for="bio">Your Biodata</label>
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </div>
+            <div class="inline-form">
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" name="password" placeholder="Confirm Password">
+                </div> 
+            </div>
+            <div class="inline-group" id="aggreement">
+                <input type="checkbox" id="aggreement">
+                <span>I accept all the terms and conditions</span>
+            </div>
+            <div class="form-btn" >
+                <button class="btn btn-reset" type="reset">reset</button>
+                <button class="btn btn-submit" type="submit">submit</button>
+            </div>
+        </section>
+    </div>
+    <!-- js file links here  -->
+    <script src="index.js"></script>
+  </body>
+</html>

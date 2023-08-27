@@ -1,0 +1,144 @@
+// about section starts 
+@media (max-width: 1250px) {
+    .work{
+        .container{
+            .work_area{
+                .row2{
+                    flex-direction: column-reverse !important;
+                }
+                .work_row{
+                    flex-direction: column;
+                    .work_content{
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .work{
+        .container{
+            .work_area{
+                .row2{
+                    flex-direction: column-reverse !important;
+                }
+                .work_row{
+                    flex-direction: column;
+                    .work_content{
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .work_img{
+                        img{
+                            width: 350px;
+                            height: 280px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .work{
+        .container{
+            .work_area{
+                .row2{
+                    flex-direction: column-reverse !important;
+                }
+                .work_row{
+                    flex-direction: column;
+                    .work_content{
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .work_img{
+                        img{
+                            width: 270px;
+                            height: 210px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// about section ends 
+
+// people section starts 
+@media (max-width: 992px) {
+    .people{
+        .container{
+            .people-container{
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+// people section ends 
+
+// about form starts 
+@media (max-width: 992px) {
+    .form{
+        .container{
+            .form-area{
+                fieldset{
+                    .group-form{
+                        flex-direction: column;
+                        gap: 4rem;
+                    }
+                    textarea{
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .form{
+        .container{
+            .form-area{
+                fieldset{
+                    .group-form{
+                        flex-direction: column;
+                        gap: 4rem;
+                    }
+                    textarea{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 460px) {
+    .form{
+        .container{
+            .form-area{
+                fieldset{
+                    .group-form{
+                        flex-direction: column;
+                        gap: 4rem;
+                        form{
+                            gap: .5rem;
+                            input{
+                                width: 200px;
+                                height: 35px;
+                            }
+                        }
+                    }
+                    textarea{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+// about form ends 

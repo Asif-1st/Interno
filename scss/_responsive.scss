@@ -1,0 +1,488 @@
+// header area responsive start 
+
+@media (max-width: 460px ) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media (768px <= width <= 992px) {
+    header{
+        .container{
+            .head_area{
+                .logo_box{
+                    .logo{
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                        span{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                nav{
+                    ul{
+                        li{
+                            margin: 0px 7px;
+                            a{
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    header{
+        .container{
+            width: 90%;
+            .head_area{
+                flex-direction: column;
+                .logo_box{
+                    .logo{
+                        img{
+                            width: 27px;
+                            height: 27px;
+                        }
+                    }
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .menu{
+                        display: block;
+                    }
+                }
+                nav{
+                    transform: scalex(0);
+                    transform-origin: right;
+                    opacity: 0;
+                    margin-top: 66px;
+                    background: #faeded;
+                    width: 90%;
+                    transition: .3s;
+                    position: absolute;
+                    ul{
+                        flex-direction: column;
+                        position: relative;
+                        li{
+                            padding: 10px 0px 10px 10px;
+                            width: 100%;
+                            &:nth-child(7){
+                                display: none;
+                            }
+                            &:nth-child(8){
+                                display: block;
+                                a{
+                                    button{
+                                        background: red;
+                                        color: white;
+                                        padding: 8px 10px;
+                                        border-radius: 5px;
+                                        border: 2px solid red;
+                                        font-size: .85rem;
+                                        font-weight: 600;
+                                        &:hover{
+                                            background: #fff;
+                                            color: red;
+                                            border: 2px solid red;
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    background: none;
+                                }
+                            }
+                            &:hover{
+                                background: rgba(255, 0, 0, 0.607);
+                                a{
+                                    color: white;
+                                }
+                            }
+                            a{
+                                font-size: .85rem;
+                                &:hover::after{
+                                    width: 0%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// header area responsive end 
+
+// banner area responsive start 
+@media (max-width: 768px) {
+    .banner{
+        .container{
+            width: 90%;
+            .banner_area{
+                padding: 15% 0px 15% 30px;
+                .banner_top{
+                    h1{
+                        font-size: 1.8rem;
+                        letter-spacing: 0px;
+                    }
+                }
+                .banner_mid{
+                    p{
+                        font-size: .95rem;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 475px) {
+    .banner{
+        .container{
+            width: 90%;
+            .banner_area{
+                padding: 15% 0px 15% 0px;
+                text-align: center;
+                .banner_top{
+                    h1{
+                        font-size: 1.8rem;
+                    }
+                }
+                .banner_mid{
+                    p{
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// banner area responsive end 
+
+// planing area responsive start 
+@media (max-width: 992px) {
+    .plan{
+        .container{
+            .plan_area{
+                flex-direction: column;
+                .plan1{
+                    padding: 70px 65px;
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 768px) {
+    .plan{
+        .container{
+            width: 90%;
+            .plan_area{
+                flex-direction: column;
+                .plan1{
+                    padding: 70px 35px;
+                }
+            }
+        }
+    }
+}
+// planing area responsive end 
+
+// quality area responsive start 
+
+@media (max-width: 1250px) {
+    .quality{
+        .container{
+            width: 90%;
+            .quality_area{
+                flex-direction: column-reverse ;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                .qu_right{
+                    text-align: start;
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 992px) {
+    .quality{
+        .container{
+            width: 90%;
+            .quality_area{
+                flex-direction: column-reverse ;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                .qu_right{
+                    text-align: start;
+                    img{
+                        width: 350px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .quality{
+        .container{
+            width: 90%;
+            .quality_area{
+                flex-direction: column-reverse ;
+                gap: 2rem;
+                align-items: center;
+                .qu_right{
+                    img{
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+                .qu_left{
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+// quality area responsive end 
+
+// about area responsive start 
+@media (max-width: 1250px) {
+    .about{
+        .container{
+            .about_area{
+                .about_bot{
+                    flex-direction: column;
+                    gap: 2rem;
+                    .review1{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about{
+        .container{
+            width: 90%;
+            .about_area{
+                .about_bot{
+                    flex-direction: column;
+                    gap: 2rem;
+                    .review1{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .about{
+        .container{
+            .about_area{
+                .about_bot{
+                    flex-direction: column;
+                    gap: 2rem;
+                    .review1{
+                        text-align: center;
+                        .re_top{
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// about area responsive end 
+
+// sponsor area responsive start 
+@media (max-width: 992px) {
+    .spon{
+        .container{
+            .spon_area{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .spon{
+        .container{
+            .spon_area{
+                grid-template-columns: repeat(1, 1fr);
+                gap: 4rem;
+            }
+        }
+    }
+}
+// sponsor area responsive end 
+
+// projects area responsive start
+@media (max-width: 1500px) {
+    .project{
+        .container{
+            .project-container{
+                .project-items{
+                    padding-bottom: 50px;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .project{
+        .container{
+            .project-container{
+                .project-items{
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    .project-item1{
+                        img{
+                            width: 300px;
+                            height: 320px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 460px) {
+    .project{
+        .container{
+            .project-container{
+                .project-items{
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    .project-item1{
+                        img{
+                            width: 230px;
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// projects area responsive end
+
+
+
+
+// counter area responsive starts
+@media (max-width: 1400px) {
+    #project-count{
+        .container{
+            .project-count-area{
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                .counter{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 460px) {
+    #project-count{
+        .container{
+            .project-count-area{
+                padding: 100px 0px;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                .counter{
+                    border: none;
+                    .counter-number{
+                        span{
+                            font-size: 60px;
+                        }
+                    }
+                    .counter-content{
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// counter area responsive ends
+
+// blog area responsive starts 
+@media (max-width: 460px) {
+    .blog{
+        .container{
+            width: 90%;
+            max-width: 460px;
+        }
+    }
+}
+// blog area responsive ends 
+
+// contact area responsive starts 
+@media (max-width: 460px) {
+    .contact{
+        .container{
+            width: 90%;
+            .contact-area{
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+// contact area responsive ends 
+
+// footer area start 
+@media (max-width: 992px) {
+    .footer{
+        .container{
+            .footer-area{
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            .footer-bottom{
+                p{
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+}
+// footer area ends 

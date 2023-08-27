@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CL.com</title>
+    <script src="https://kit.fontawesome.com/59d956ad9e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .line {
+            background-color: grey;
+            height: 4px;
+            animation-name: line;
+            animation-duration: 4s;
+        }
+
+        @keyframes line {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        header {
+            display: block;
+        }
+
+        nav {
+            background-color: rgb(211, 230, 41);
+            border-radius: 50px;
+            height: 60px;
+        }
+
+        nav ul li {
+            display: inline-flex;
+            margin: 12px 30px;
+            list-style: none;
+            padding: 8px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: rgb(48, 45, 45);
+
+        }
+
+        nav li a:hover {
+            color: rgb(255, 255, 255);
+            text-shadow: 3px 5px 6px black;
+        }
+
+        .input {
+            float: right;
+            margin: 3px 30px;
+            padding: 8px;
+        }
+
+        .input button {
+            text-align: center;
+            border-radius: 5px;
+            padding: 8px;
+            background: white;
+            border: 2px solid grey;
+        }
+
+        .input button:hover {
+            background: grey;
+            color: rgb(211, 230, 41);
+            box-shadow: 1px 1px 7px grey;
+
+        }
+
+        #contant {
+            background-color: #ffffff;
+            width: 100%;
+        }
+
+        .cont {
+            width: 80%;
+            margin: auto;
+            margin-top: 45px;
+            overflow: hidden;
+            border: 2px solid rgb(233, 223, 223);
+            border-radius: 15px;
+            box-shadow: 5px 6px 15px 8px rgb(224 221 221);
+            padding: 35px;
+        }
+
+        .container {
+            color: rgb(211, 230, 41);
+            width: 50%;
+            margin: auto;
+        }
+
+        .container h1 {
+            font-size: 45px;
+            letter-spacing: 3px;
+        }
+
+        .container p {
+            line-height: 25px;
+            color: rgb(187, 201, 66);
+        }
+
+        .icon input {
+            border: 2px solid rgb(211, 230, 41);
+            border-radius: 30px;
+            text-align: center;
+            padding: 12px;
+            margin-top: 25px;
+            width: 50%;
+            font-size: 15px;
+        }
+
+        .icon input:hover {
+            color: rgb(187, 201, 66);
+        }
+        input:hover{
+            background: red;
+            transition: 3s;
+        }
+
+        #bg {
+            height: 100vh;
+            width: 100%;
+        }
+
+        #div0 {
+            margin-top: 45px;
+
+        }
+
+        .div1 {
+            background: red;
+            width: 50%;
+            float: left;
+            height: 50vh;
+            text-align: center;
+        }
+
+        .div2 {
+            background: blue;
+            width: 50%;
+            float: right;
+            height: 50vh;
+            text-align: center;
+        }
+
+        #div9 {
+            margin-top: 45px;
+        }
+
+        .div3 {
+            background: gray;
+            width: 50%;
+            float: left;
+            height: 50vh;
+            text-align: center;
+        }
+
+        .div4 {
+            background: black;
+            width: 50%;
+            float: right;
+            height: 50vh;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="line"></div>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <img src="https://colibriwp.com/blog/wp-content/uploads/2020/09/colibri-white.png" alt="" style=" background-color: rgb(211, 230, 41);                       height: 40px;
+                        width: 130px; float: left;">
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="input">
+                    <button>Enrol Now</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section id="contant">
+        <div class="cont">
+            <div class="container">
+                <h1>Coding Life</h1><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis, nulla laudantium
+                    explicabo
+                    nesciunt expedita debitis error aliquid ducimus blanditiis tenetur saepe impedit eius obcaecati,
+                    sint,
+                    hic modi sed ullam! Quam neque sed placeat quas.</p>
+                <div class="icon">
+                    <input type="text" placeholder="Search" /><i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="div0">
+            <div class="div1">div1</div>
+            <div class="div2">div2</div>
+        </div>
+        <div id="div9">
+            <div class="div3">div3</div>
+            <div class="div4">div4</div>
+        </div>
+    </section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem sequi, expedita mollitia eius quo
+        asperiores pariatur beatae quaerat officiis ducimus culpa modi, illum doloremque quas fuga veniam placeat ullam
+        dicta corporis voluptates, sed corrupti? Magnam illo aliquam odio ipsa! Suscipit praesentium ex maiores esse
+        repellat quibusdam corporis error porro a necessitatibus accusantium vel repudiandae adipisci eius, ullam
+        similique odio labore modi tempore commodi animi voluptas! Animi magni iste, architecto repellat aspernatur eius
+        voluptatem voluptas in asperiores unde quae, quos ut modi omnis ipsam amet ex fugit, rem dolore quidem libero
+        vel eum quia! Culpa tenetur commodi obcaecati tempore earum, placeat sit eius architecto voluptatum quis
+        blanditiis qui consectetur. Maxime suscipit sunt iure, delectus a quae nisi libero. Provident, ratione.
+        Blanditiis alias saepe ipsa ipsam fugit. Doloribus, recusandae vero a, voluptatibus cum dignissimos corrupti
+        facere obcaecati eum quia aperiam temporibus minus vel ipsum ea culpa magnam fugit? Dolor nulla asperiores velit
+        tempore sunt officiis assumenda quaerat minus ullam. Velit harum asperiores quibusdam perspiciatis recusandae
+        commodi earum, doloribus quo! Autem ipsam corporis dolores quaerat nulla, amet et quos. Obcaecati est
+        repellendus sed maiores, possimus quaerat neque placeat inventore quia debitis expedita deserunt corporis
+        delectus omnis odit! Possimus accusamus sequi laudantium ut dolores placeat illo numquam recusandae hic delectus
+        maxime voluptatem repellendus, natus velit molestiae, minus, cum atque similique non libero fugit. Dignissimos
+        sint similique quae illum optio nobis suscipit vero impedit, consectetur sunt? Debitis nulla voluptatibus odit
+        laboriosam quibusdam fugiat rerum dicta, ratione dolorum itaque eligendi optio facilis labore quos et. Alias,
+        officiis animi. Incidunt, cum at quo mollitia excepturi iste voluptas optio neque aspernatur deserunt possimus
+        maxime eaque ipsam explicabo vero. Dolore a vitae necessitatibus est delectus facilis libero non magni nemo
+        dolores praesentium iusto voluptates eligendi commodi consequatur quam impedit adipisci, maiores excepturi eius?
+        Aliquid quo impedit doloribus, ullam et autem temporibus blanditiis perspiciatis minima perferendis ad aliquam.
+        Cumque possimus similique temporibus accusamus molestiae ex laborum modi enim quod deleniti officiis, mollitia
+        tempore nulla praesentium! Excepturi officia deserunt optio at ipsa dolores quidem nam similique incidunt odio,
+        eum, molestias alias rerum ipsum hic, voluptatibus a dolore animi vitae? Cum natus, minima cupiditate tempore
+        eum vel expedita molestiae aperiam voluptates corporis facere amet in inventore, ipsum voluptatum impedit quasi
+        ad. Optio non earum laudantium velit eius quam iusto ad ipsum, et nisi quas neque est vero expedita autem esse
+        illo quisquam quasi, fuga saepe. Consequuntur esse itaque quia harum tempore laudantium ea, optio dolorum
+        similique, nam omnis labore in officiis sapiente expedita aliquid delectus nobis ab maxime architecto debitis
+        eligendi reiciendis. Eligendi, iste aut, quos ad culpa excepturi qui rem a vel nulla maiores sint laudantium
+        quis eum dolore, quaerat incidunt velit nisi dolorem aperiam! Eligendi dolor molestiae minus fugiat a illum
+        delectus sit vitae voluptates!</p>
+</body>
+
+</html>

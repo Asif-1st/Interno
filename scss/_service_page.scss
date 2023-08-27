@@ -1,0 +1,78 @@
+@media (max-width: 1200px) {
+    .service{
+        .container{
+            .service-area{
+                .service-container{
+                    .service-row{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .service{
+        .container{
+            .service-area{
+                .service-container{
+                    .service-row{
+                        grid-template-columns: repeat(1, 1fr);
+                        .service-item{
+                            padding: 60px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// service work area starts 
+@media (max-width: 1500px) {
+    .service-work{
+        .container{
+            .service-work-area{
+                .service-work-container{
+                    gap: 3rem;
+                    .service-img{
+                        img{
+                            width: 320px;
+                            height: 370px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .service-work{
+        .container{
+            .service-work-area{
+                .service-work-container{
+                    gap: 4rem;
+                    .service-work-row{
+                        flex-direction: column;
+                        &:nth-child(2){
+                            flex-direction: column-reverse;
+                        }
+                        &:nth-child(4){
+                            flex-direction: column-reverse;
+                        }
+                        .service-img{
+                            img{
+                                width: 100%;
+                                height: auto;
+                                border-radius: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// service work area ends 
